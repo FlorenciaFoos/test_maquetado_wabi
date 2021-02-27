@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24"><g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><g><g><path d="M7.71,9.29l3.88,3.88l3.88-3.88c0.39-0.39,1.02-0.39,1.41,0l0,0c0.39,0.39,0.39,1.02,0,1.41l-4.59,4.59 c-0.39,0.39-1.02,0.39-1.41,0L6.29,10.7c-0.39-0.39-0.39-1.02,0-1.41l0,0C6.68,8.91,7.32,8.9,7.71,9.29z"/></g></g></g></svg>
+<svg id="expand_more-24px" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Grupo_1" data-name="Grupo 1">
+    <path id="Trazado_3" data-name="Trazado 3" d="M0,0H24V24H0Z" fill="none"/>
+  </g>
+  <g id="Grupo_4" data-name="Grupo 4">
+    <g id="Grupo_3" data-name="Grupo 3">
+      <g id="Grupo_2" data-name="Grupo 2">
+        <path id="Trazado_4" data-name="Trazado 4" d="M7.71,9.29l3.88,3.88,3.88-3.88a1,1,0,0,1,1.41,0h0a1,1,0,0,1,0,1.41l-4.59,4.59a1,1,0,0,1-1.41,0L6.29,10.7a1,1,0,0,1,0-1.41h0A1.017,1.017,0,0,1,7.71,9.29Z" fill="#21c063"/>
+      </g>
+    </g>
+  </g>
+</svg>
