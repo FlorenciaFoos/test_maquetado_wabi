@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24"><g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><g><g><path d="M9.29,15.46l3.88-3.88L9.29,7.7c-0.39-0.39-0.39-1.02,0-1.41l0,0c0.39-0.39,1.02-0.39,1.41,0l4.59,4.59 c0.39,0.39,0.39,1.02,0,1.41l-4.59,4.59c-0.39,0.39-1.02,0.39-1.41,0l0,0C8.91,16.49,8.9,15.85,9.29,15.46z"/></g></g></g></svg>
+<svg id="chevron_right-24px" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Grupo_1" data-name="Grupo 1">
+    <path id="Trazado_7" data-name="Trazado 7" d="M0,0H24V24H0Z" fill="none"/>
+  </g>
+  <g id="Grupo_4" data-name="Grupo 4">
+    <g id="Grupo_3" data-name="Grupo 3">
+      <g id="Grupo_2" data-name="Grupo 2">
+        <path id="Trazado_8" data-name="Trazado 8" d="M9.29,15.46l3.88-3.88L9.29,7.7a1,1,0,0,1,0-1.41h0a1,1,0,0,1,1.41,0l4.59,4.59a1,1,0,0,1,0,1.41L10.7,16.88a1,1,0,0,1-1.41,0h0A1.017,1.017,0,0,1,9.29,15.46Z" fill="#21c063"/>
+      </g>
+    </g>
+  </g>
+</svg>
