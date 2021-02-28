@@ -55,6 +55,30 @@ body {
     width: 1rem;
 }
 
+.nav-item {
+    position: relative;
+}
+
+.active {
+    background-color: white;
+}
+
+.active a {
+    color: var(--green);
+}
+
+.active::before {
+    content: ' ';
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    /* Dot border */
+    border-right: 5px dotted white;
+    /* Offset radius  */
+    left: -3px;
+}
+
 
 /* PRODUCTOS */
 
@@ -98,6 +122,14 @@ h2::after {
     border-radius: 6px;
     box-shadow: 0 0 8px -2px rgba(0, 0, 0, .4);
     color: var(--grey-items);
+}
+
+.card-img-top {
+    z-index: 1;
+}
+
+.badge-secondary {
+    z-index: 2;
 }
 
 .card-title {
