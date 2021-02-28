@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" lang="es" content="Wabi - De la tienda de tu barrio a tu casa">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Wabi</title>
 </head>
@@ -16,16 +17,16 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-light">
+
+        <nav>
 
             <div class="container">
-                <span class="d-flex align-items-center justify-content-between">
-                    <!-- <i class="material-icons white open">menu</i> -->
+                <div class="d-flex align-items-center justify-content-around py-2">
+
                     <form class="form-inline my-2 my-lg-0">
                         <button class="btn my-2 my-sm-0" type="submit"><img src="icons/search-24px.svg"
                                 alt="icon lupa"></button>
-                        <input class="form-control mr-sm-2 border-0" type="search" placeholder="¿Qué estás buscando?"
-                            aria-label="Search">
+                        <input class="form-control border-0" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
 
                     </form>
 
@@ -33,66 +34,40 @@
                     <a class="navbar-brand">
                         <img src="img/logo-min.svg" alt="logo wabi">
                     </a>
-                    <span class="hidden-xs">
-                        <a href="#">ES <img src="icons/expand_more-24px.svg" alt="icon flecha indicando abajo"></a>
-                        <a href="#" target="_blank"><img src="icons/person_outline-24px.svg" alt="icon usuario"></a>
-                        <a href="#"><img src="icons/shopping_cart-24px.svg" alt="icon shop"></a>
-                    </span>
-                </span>
+                    <div class="user-options d-flex align-items-center">
+                        <a href="#" class="mr-3">ES <img src="icons/expand_more-24px.svg"
+                                alt="icon flecha indicando abajo"></a>
+                        <a href="#" class="mr-3"><img src="icons/person_outline-24px.svg" alt="icon usuario"></a>
+                        <a href="#" class="mr-3 shop"><img src="icons/shopping_cart-24px.svg" alt="icon shop"><span class="label rounded-circle text-center">0</span></a>
+                    </div>
+                </div>
 
 
             </div>
+
+
+            <ul class="nav justify-content-center w-100 py-2">
+                <li class=" nav-item active">
+                    <a class="nav-link" href="#">Promociones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Alcohol</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Beverages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Groceries</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Beauty and healthcare</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home cleaning</a>
+                </li>
+            </ul>
+
         </nav>
-        <!-- <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-                <form class="form-inline my-2 my-lg-0">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    <input class="form-control mr-sm-2" type="search" placeholder="¿Qué estás buscando?"
-                        aria-label="Search">
-
-                </form>
-            </div>
-            <div class="mx-auto order-0">
-                <a class="navbar-brand mx-auto" href="#">logo</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">shop</a>
-                    </li>
-                </ul>
-            </div>
-        </nav> -->
-
-        <ul class="nav justify-content-center w-100">
-            <li class=" nav-item active">
-                <a class="nav-link" href="#">Promociones</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Alcohol</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Beverages</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Groceries</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Beauty and healthcare</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Home cleaning</a>
-            </li>
-        </ul>
 
 
     </header>
@@ -102,126 +77,153 @@
         </section>
 
 
-        <section class="products">
-            <div class="row">
+        <section class="products mx-6">
+            <div class="row m-auto">
                 <h2>Productos en promoción</h2>
                 <hr>
                 <button type="button" class="btn btn-outline-success d-flex align-items-center ">Ver Todas <img
                         src="icons/chevron_right-24px.svg" alt="flecha indicando derecha"></button>
             </div>
 
-            <div class="card-group  mt-5">
+            <div class="card-deck  my-5">
                 <div class="card">
-                    <span class="badge badge-secondary">Minimo x 1u</span>
+                    <span class="badge badge-secondary">Mínimo <br> x 1u</span>
                     <img src="img/coca.png" class="card-img-top img-fluid" alt="imagen botella coca cola">
                     <div class="card-body">
-                        <h5 class="card-title">Nestle gold CornFlakes 14 x 500g</h5>
+                        <h5 class="card-title">NESTLE GOLD CornFlakes 14 x 500g</h5>
                         <p class="card-text">CORN FLAKES</p>
-                        <p class="card-text">$9.30</p>
-                        <span class="badge badge-pill badge-success">CX14U</span>
-                        <div class="input-group">
-                            <span class="input-group-btn">
-                                <button type="button" class="btn btn-default btn-number" disabled="disabled"
-                                    data-type="minus" data-field="quant[1]">
-                                    <span class="glyphicon glyphicon-minus">-</span>
-                            </button>
-                            </span>
-                            <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
-                            <span class="input-group-btn">
-                                <button type="button" class="btn btn-default btn-number" data-type="plus"
-                                    data-field="quant[1]">
-                                    <span class="glyphicon glyphicon-plus">+</span>
-                            </button>
-                            </span>
+                        <p class="card-price">$9.30</p>
+                        <div class="d-flex align-items-center">
+                            <span class="badge badge-pill badge-success mr-2">CX14U</span>
+                            <div class="input-group outline">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default btn-number" disabled="disabled"
+                                        data-type="minus" data-field="quant[1]">
+                                        <span class="glyphicon glyphicon-minus"> <img src="icons/remove-24px.svg"
+                                                alt="icon signo resta"></span>
+                                </button>
+                                </span>
+                                <input type="text" name="quant[1]" class="form-control input-number" value="1">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default btn-number" data-type="plus"
+                                        data-field="quant[1]">
+                                        <span class="glyphicon glyphicon-plus"> <img src="icons/add-24px.svg"
+                                                alt="icon signo suma"></span>
+
+                                </button>
+                                </span>
+                            </div>
                         </div>
+
                     </div>
                     <div class="card-footer">
-                        <button type="button" class="btn btn-success">Agregar a</button>
+                        <button type="button" class="btn btn-success w-100 p-1">Agregar a <img
+                                src="icons/shopping_cart-24px-white.svg" alt="icon shop"></button>
                     </div>
                 </div>
 
                 <div class="card">
-                    <span class="badge badge-secondary">Minimo x 1u</span>
+                    <span class="badge badge-secondary">Mínimo <br> x 1u</span>
                     <img src="img/coca.png" class="card-img-top img-fluid" alt="imagen botella coca cola">
                     <div class="card-body">
-                        <h5 class="card-title">Nestle gold CornFlakes 14 x 500g</h5>
+                        <h5 class="card-title">NESTLE GOLD CornFlakes 14 x 500g</h5>
                         <p class="card-text">CORN FLAKES</p>
-                        <p class="card-text">$9.30</p>
-                        <span class="badge badge-pill badge-success">CX14U</span>
-                        <div class="input-group">
-                            <span class="input-group-btn">
-                                <button type="button" class="btn btn-default btn-number" disabled="disabled"
-                                    data-type="minus" data-field="quant[1]">
-                                    <span class="glyphicon glyphicon-minus">-</span>
-                            </button>
-                            </span>
-                            <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
-                            <span class="input-group-btn">
-                                <button type="button" class="btn btn-default btn-number" data-type="plus"
-                                    data-field="quant[1]">
-                                    <span class="glyphicon glyphicon-plus">+</span>
-                            </button>
-                            </span>
+                        <p class="card-price">$9.30</p>
+
+                        <div class="d-flex align-items-center">
+                            <span class="badge badge-pill badge-success mr-2">CX14U</span>
+                            <div class="input-group  outline">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default btn-number" disabled="disabled"
+                                        data-type="minus" data-field="quant[1]">
+                                        <span class="glyphicon glyphicon-minus"> <img src="icons/remove-24px.svg"
+                                                alt="icon signo resta"></span>
+                                </button>
+                                </span>
+                                <input type="text" name="quant[1]" class="form-control input-number" value="1">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default btn-number" data-type="plus"
+                                        data-field="quant[1]">
+                                        <span class="glyphicon glyphicon-plus"> <img src="icons/add-24px.svg"
+                                                alt="icon signo suma"></span>
+                                </button>
+                                </span>
+                            </div>
                         </div>
+
                     </div>
                     <div class="card-footer">
-                        <button type="button" class="btn btn-success">Agregar a</button>
+                        <button type="button" class="btn btn-success w-100 p-1">Agregar a <img
+                                src="icons/shopping_cart-24px-white.svg" alt="icon shop"></button>
                     </div>
                 </div>
                 <div class="card">
-                    <span class="badge badge-secondary">Minimo x 1u</span>
+                    <span class="badge badge-secondary">Mínimo <br> x 1u</span>
                     <img src="img/coca.png" class="card-img-top img-fluid" alt="imagen botella coca cola">
                     <div class="card-body">
-                        <h5 class="card-title">Nestle gold CornFlakes 14 x 500g</h5>
+                        <h5 class="card-title">NESTLE GOLD CornFlakes 14 x 500g</h5>
                         <p class="card-text">CORN FLAKES</p>
-                        <p class="card-text">$9.30</p>
-                        <span class="badge badge-pill badge-success">CX14U</span>
-                        <div class="input-group">
-                            <span class="input-group-btn">
-                                <button type="button" class="btn btn-default btn-number" disabled="disabled"
-                                    data-type="minus" data-field="quant[1]">
-                                    <span class="glyphicon glyphicon-minus">-</span>
-                            </button>
-                            </span>
-                            <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
-                            <span class="input-group-btn">
-                                <button type="button" class="btn btn-default btn-number" data-type="plus"
-                                    data-field="quant[1]">
-                                    <span class="glyphicon glyphicon-plus">+</span>
-                            </button>
-                            </span>
+                        <p class="card-price">$9.30</p>
+                        <div class="d-flex align-items-center">
+                            <span class="badge badge-pill badge-success mr-2">CX14U</span>
+                            <div class="input-group  outline">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default btn-number" disabled="disabled"
+                                        data-type="minus" data-field="quant[1]">
+                                        <span class="glyphicon glyphicon-minus"> <img src="icons/remove-24px.svg"
+                                                alt="icon signo resta"></span>
+                                </button>
+                                </span>
+                                <input type="text" name="quant[1]" class="form-control input-number" value="1">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default btn-number" data-type="plus"
+                                        data-field="quant[1]">
+                                        <span class="glyphicon glyphicon-plus"> <img src="icons/add-24px.svg"
+                                                alt="icon signo suma"></span>
+                                </button>
+                                </span>
+                            </div>
                         </div>
+
                     </div>
                     <div class="card-footer">
-                        <button type="button" class="btn btn-success">Agregar a</button>
+                        <button type="button" class="btn btn-success w-100 p-1">Agregar a <img
+                                src="icons/shopping_cart-24px-white.svg" alt="icon shop"></button>
                     </div>
                 </div>
                 <div class="card">
-                    <span class="badge badge-secondary">Minimo x 1u</span>
+                    <span class="badge badge-secondary">Mínimo <br> x 1u</span>
                     <img src="img/coca.png" class="card-img-top img-fluid" alt="imagen botella coca cola">
                     <div class="card-body">
-                        <h5 class="card-title">Nestle gold CornFlakes 14 x 500g</h5>
+                        <h5 class="card-title">NESTLE GOLD CornFlakes 14 x 500g</h5>
                         <p class="card-text">CORN FLAKES</p>
-                        <p class="card-text">$9.30</p>
-                        <span class="badge badge-pill badge-success">CX14U</span>
-                        <div class="input-group">
-                            <span class="input-group-btn">
-                                <button type="button" class="btn btn-default btn-number" disabled="disabled"
-                                    data-type="minus" data-field="quant[1]">
-                                    <span class="glyphicon glyphicon-minus">-</span>
-                            </button>
-                            </span>
-                            <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
-                            <span class="input-group-btn">
-                                <button type="button" class="btn btn-default btn-number" data-type="plus"
-                                    data-field="quant[1]">
-                                    <span class="glyphicon glyphicon-plus">+</span>
-                            </button>
-                            </span>
+                        <p class="card-price">$9.30</p>
+                        <div class="d-flex align-items-center">
+                            <span class="badge badge-pill badge-success mr-2">CX14U</span>
+                            <div class="input-group  outline">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default btn-number" disabled="disabled"
+                                        data-type="minus" data-field="quant[1]">
+                                        <span class="glyphicon glyphicon-minus"> <img src="icons/remove-24px.svg"
+                                                alt="icon signo resta"></span>
+                                </button>
+                                </span>
+                                <input type="text" name="quant[1]" class="form-control input-number" value="1">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default btn-number" data-type="plus"
+                                        data-field="quant[1]">
+                                        <span class="glyphicon glyphicon-plus"> <img src="icons/add-24px.svg"
+                                                alt="icon signo suma"></span>
+
+                                </button>
+                                </span>
+                            </div>
                         </div>
+
                     </div>
                     <div class="card-footer">
-                        <button type="button" class="btn btn-success">Agregar a</button>
+                        <button type="button" class="btn btn-success w-100 p-1">Agregar a <img
+                                src="icons/shopping_cart-24px-white.svg" alt="icon shop"></button>
                     </div>
                 </div>
             </div>
