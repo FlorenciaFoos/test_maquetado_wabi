@@ -6,7 +6,7 @@
      & a {
          color: $color-white;
          font-weight: 500;
-         font-size: $font-size-16;
+         font-size: $font-size-14;
      }
  }
  
@@ -23,6 +23,11 @@
  .form-control {
      font-size: $font-size-14;
      border: none;
+     font-weight: 700;
+ }
+ 
+ .search {
+     font-size: $font-size-14;
  }
  
  .icon-shop {
@@ -124,6 +129,7 @@
      width: fit-content;
      margin: 0.5rem 0 0 0.5rem;
      z-index: 2;
+     font-weight: 500;
  }
  
  .badge-pill {
