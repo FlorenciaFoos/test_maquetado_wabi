@@ -9,7 +9,7 @@ body {
   .menu-categories a {
     color: #fff;
     font-weight: 500;
-    font-size: 1rem; }
+    font-size: 0.875rem; }
 
 .menu-language {
   color: #323232; }
@@ -21,7 +21,11 @@ body {
 
 .form-control {
   font-size: 0.875rem;
-  border: none; }
+  border: none;
+  font-weight: 700; }
+
+.search {
+  font-size: 0.875rem; }
 
 .icon-shop {
   position: relative; }
@@ -106,7 +110,8 @@ body {
   color: #616783;
   width: fit-content;
   margin: 0.5rem 0 0 0.5rem;
-  z-index: 2; }
+  z-index: 2;
+  font-weight: 500; }
 
 .badge-pill {
   background-color: #fff;

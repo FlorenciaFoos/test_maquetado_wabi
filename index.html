@@ -18,37 +18,49 @@
 <body>
 
     <header>
-
         <nav class="navbar-expand-lg">
-
             <div class="container">
-
+                <!-- menu opciones usuario -->
                 <div class="d-flex align-items-center justify-content-around py-2">
-
-                    <form class="form-inline my-2 my-lg-0 ">
+                    <button class="btn d-md-none" type="button" data-toggle="collapse" data-target="#mobile" aria-expanded="false" aria-controls="mobile">
+                        <img src="icons/menu-24px.svg" alt="icon menu mobile">
+                    </button>
+                    <form class="form-inline my-2 my-lg-0 d-md-block d-sm-none d-none">
                         <button class="btn my-2 my-sm-0" type="submit"><img src="icons/search-24px.svg"
                                 alt="icon lupa"></button>
-                        <input class="form-control border-0" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
-
+                        <input class="search border-0" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
                     </form>
-
-
                     <a class="navbar-brand">
                         <img src="img/logo-min.svg" alt="logo wabi">
                     </a>
-
-                    <div class="user-options d-flex  align-items-center ">
+                    <div class="user-options d-md-flex  align-items-center d-sm-none d-none">
                         <a href="#" class="mr-3 menu-language">ES <img src="icons/expand_more-24px.svg"
                                 alt="icon flecha indicando abajo"></a>
                         <a href="#" class="mr-3"><img src="icons/person_outline-24px.svg" alt="icon usuario"></a>
                         <a href="#" class="mr-3 icon-shop"><img src="icons/shopping_cart-24px.svg" alt="icon shop"><span class="rounded-circle text-center">0</span></a>
                     </div>
                 </div>
-
+                <!-- menu opciones usuario -->
 
             </div>
+            <!-- menu mobile -->
+            <div class="collapse d-md-none p-4" id="mobile">
+                <div class="user-options d-flex  flex-column align-items-center">
+                    <a href="#" class="mr-3 menu-language mb-3">ES <img src="icons/expand_more-24px.svg"
+                            alt="icon flecha indicando abajo"></a>
+                    <a href="#" class="mr-3 mb-3"><img src="icons/person_outline-24px.svg" alt="icon usuario">Perfil</a>
+                    <a href="#" class="mr-3 icon-shop mb-3"><img src="icons/shopping_cart-24px.svg" alt="icon shop">Carrito
+                    </a>
+                    <form class="form-inline my-2 my-lg-0 ">
+                        <button class="btn my-2 my-sm-0" type="submit"><img src="icons/search-24px.svg"
+                                alt="icon lupa"></button>
+                        <input class="search border-0" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
+                    </form>
+                </div>
 
-
+            </div>
+            <!-- menu mobile -->
+            <!-- menu categorias -->
             <ul class="nav justify-content-center w-100 py-2 menu-categories">
                 <li class="nav-item active rounded-right position-relative">
                     <a class="nav-link" href="#">Promociones</a>
@@ -69,7 +81,7 @@
                     <a class="nav-link" href="#">Home cleaning</a>
                 </li>
             </ul>
-
+            <!-- menu categorias -->
         </nav>
 
 
@@ -79,7 +91,7 @@
             <img src="img/wabi.png" alt="banner wabi" class="img-fluid">
         </section>
 
-
+        <!-- grilla productos -->
         <section class="products mx-6">
             <div class="row mx-3">
                 <h2 class="products-heading">Productos en promoción</h2>
@@ -245,7 +257,6 @@
     </main>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
