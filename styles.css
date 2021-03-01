@@ -55,10 +55,6 @@ body {
     width: 1rem;
 }
 
-.nav-item {
-    position: relative;
-}
-
 .active {
     background-color: white;
 }
@@ -115,7 +111,7 @@ h2::after {
 }
 
 .mx-6 {
-    margin: 0 10vw 0 10vw;
+    margin: 0 8vw 0 8vw;
 }
 
 .card {
