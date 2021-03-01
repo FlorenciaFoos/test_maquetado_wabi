@@ -9,8 +9,9 @@
 
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+
+
+    <link rel="stylesheet" href="css/style.css">
     <title>Wabi</title>
 </head>
 
@@ -18,12 +19,13 @@
 
     <header>
 
-        <nav>
+        <nav class="navbar-expand-lg">
 
             <div class="container">
+
                 <div class="d-flex align-items-center justify-content-around py-2">
-                    <button class='d-md-none' data-toggle="collapse" data-target="#demo">open</button>
-                    <form class="form-inline my-2 my-lg-0">
+
+                    <form class="form-inline my-2 my-lg-0 ">
                         <button class="btn my-2 my-sm-0" type="submit"><img src="icons/search-24px.svg"
                                 alt="icon lupa"></button>
                         <input class="form-control border-0" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
@@ -35,11 +37,11 @@
                         <img src="img/logo-min.svg" alt="logo wabi">
                     </a>
 
-                    <div class="user-options d-flex  align-items-center" id="demo">
-                        <a href="#" class="mr-3">ES <img src="icons/expand_more-24px.svg"
+                    <div class="user-options d-flex  align-items-center ">
+                        <a href="#" class="mr-3 menu-language">ES <img src="icons/expand_more-24px.svg"
                                 alt="icon flecha indicando abajo"></a>
                         <a href="#" class="mr-3"><img src="icons/person_outline-24px.svg" alt="icon usuario"></a>
-                        <a href="#" class="mr-3 shop"><img src="icons/shopping_cart-24px.svg" alt="icon shop"><span class="label rounded-circle text-center">0</span></a>
+                        <a href="#" class="mr-3 icon-shop"><img src="icons/shopping_cart-24px.svg" alt="icon shop"><span class="rounded-circle text-center">0</span></a>
                     </div>
                 </div>
 
@@ -47,7 +49,7 @@
             </div>
 
 
-            <ul class="nav justify-content-center w-100 py-2">
+            <ul class="nav justify-content-center w-100 py-2 menu-categories">
                 <li class="nav-item active rounded-right position-relative">
                     <a class="nav-link" href="#">Promociones</a>
                 </li>
@@ -79,17 +81,17 @@
 
 
         <section class="products mx-6">
-            <div class="row m-auto">
-                <h2>Productos en promoción</h2>
+            <div class="row mx-3">
+                <h2 class="products-heading">Productos en promoción</h2>
                 <hr>
                 <button type="button" class="btn btn-outline-success d-flex align-items-center ">Ver Todas <img
-                        src="icons/chevron_right-24px.svg" alt="flecha indicando derecha"></button>
+                        src="icons/chevron_right-24px.svg" alt="icon flecha indicando derecha"></button>
             </div>
 
             <div class="container my-5">
                 <div class="row">
                     <div class="col-lg-3  col-md-6 col-sm-10 col-xs-12">
-                        <div class="card">
+                        <div class="card mb-2">
                             <span class="badge badge-secondary position-absolute">Mínimo <br> x 1u</span>
                             <img src="img/coca.png" class="card-img-top img-fluid mt-1 position-relative" alt="imagen botella coca cola">
                             <div class="card-body">
@@ -98,7 +100,7 @@
                                 <p class="card-price mb-0">$9.30</p>
                                 <div class="d-flex align-items-center">
                                     <span class="badge badge-pill badge-success mr-2">CX14U</span>
-                                    <div class="input-group outline align-items-center">
+                                    <div class="input-group card-input-outline align-items-center">
                                         <span class="input-group-btn">
                                             <button type="button" class="btn btn-default btn-number" disabled="disabled"
                                                 data-type="minus" data-field="quant[1]">
@@ -126,7 +128,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3  col-md-6 col-sm-10 col-xs-12">
-                        <div class="card">
+                        <div class="card mb-2">
                             <span class="badge badge-secondary position-absolute">Mínimo <br> x 1u</span>
                             <img src="img/coca.png" class="card-img-top img-fluid mt-1 position-relative" alt="imagen botella coca cola">
                             <div class="card-body">
@@ -136,7 +138,7 @@
 
                                 <div class="d-flex align-items-center">
                                     <span class="badge badge-pill badge-success mr-2">CX14U</span>
-                                    <div class="input-group  outline align-items-center">
+                                    <div class="input-group  card-input-outline align-items-center">
                                         <span class="input-group-btn">
                                             <button type="button" class="btn btn-default btn-number" disabled="disabled"
                                                 data-type="minus" data-field="quant[1]">
@@ -163,7 +165,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3  col-md-6 col-sm-10 col-xs-12">
-                        <div class="card">
+                        <div class="card mb-2">
                             <span class="badge badge-secondary position-absolute">Mínimo <br> x 1u</span>
                             <img src="img/coca.png" class="card-img-top img-fluid mt-1 position-relative" alt="imagen botella coca cola">
                             <div class="card-body">
@@ -172,7 +174,7 @@
                                 <p class="card-price mb-0">$9.30</p>
                                 <div class="d-flex align-items-center">
                                     <span class="badge badge-pill badge-success mr-2">CX14U</span>
-                                    <div class="input-group  outline align-items-center">
+                                    <div class="input-group card-input-outline align-items-center">
                                         <span class="input-group-btn">
                                             <button type="button" class="btn btn-default btn-number" disabled="disabled"
                                                 data-type="minus" data-field="quant[1]">
@@ -199,7 +201,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-10 col-xs-12">
-                        <div class="card">
+                        <div class="card mb-2">
                             <span class="badge badge-secondary position-absolute">Mínimo <br> x 1u</span>
                             <img src="img/coca.png" class="card-img-top img-fluid mt-1 position-relative" alt="imagen botella coca cola">
                             <div class="card-body">
@@ -208,7 +210,7 @@
                                 <p class="card-price mb-0">$9.30</p>
                                 <div class="d-flex align-items-center">
                                     <span class="badge badge-pill badge-success mr-2">CX14U</span>
-                                    <div class="input-group  outline align-items-center">
+                                    <div class="input-group  card-input-outline align-items-center">
                                         <span class="input-group-btn">
                                             <button type="button" class="btn btn-default btn-number" disabled="disabled"
                                                 data-type="minus" data-field="quant[1]">

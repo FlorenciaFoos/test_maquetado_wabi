@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+// COLOR VARIABLES
+$color-green: #21c063;
+$color-black: #323232;
+$color-grey: #f4f4f4;
+$color-grey-items: #616783;
+$color-white: #fff;
+// FONT VARIABLES
+$font-primary: 'Rubik',
+sans-serif;
+$font-size-12: 0.75rem;
+$font-size-14: 0.875rem;
+$font-size-16: 1rem;
+$font-size-20: 1.25rem;
+body {
+    font-family: $font-primary;
+}
+
+@mixin outline {
+    background-color: $color-white;
+    border: 1px solid $color-green;
+    color: $color-grey-items;
+}
